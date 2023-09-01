@@ -10,7 +10,7 @@ This tool is based upon [Psi](https://github.com/Th30neAnd0nly/Psi) .This is a t
 
 
 [![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/TrackDown)](https://repl.it/github/Th30neAnd0nly/TrackDown)
- [![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/TrackDown)](https://repl.it/github/Th30neAnd0nly/TrackDown)
+ [![Run on Repl.it](https://repl.it/badge/github/noora-bot/TrackDown)](https://repl.it/github/noora-bot/TrackDown)
  
 #### Video Tutorial 
 
